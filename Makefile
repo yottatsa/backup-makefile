@@ -3,7 +3,7 @@ MOUNTPOINT = /media/portable
 BACKUPDIR = $(MOUNTPOINT)/backup
 TODAY := $(shell date +%Y-%m-%d)
 LOGFILE = /tmp/backup.log
-LATEST = $(PWD)/latest
+LATEST = $(BACKUPDIR)/latest
 TARGET = $(HOME)/
 
 all:;@echo use backup target
